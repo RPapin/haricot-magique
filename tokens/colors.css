@@ -1,0 +1,70 @@
+:root{
+  /* --- Base: potager & lin --- */
+  --lin-50:#FFFDF8;
+  --lin-100:#FBF7EF;
+  --lin-200:#F3EDE1;
+  --lin-300:#E8DFCC;
+  --lin-400:#D9CDB3;
+
+  --basilic-900:#1B2719;
+  --basilic-800:#22301F;
+  --basilic-700:#2F4A32;
+  --basilic-600:#3D5E3F;
+  --basilic-500:#587A5B;
+  --basilic-300:#A8BFA6;
+  --basilic-100:#E4EDE1;
+
+  /* --- Légumes: accents --- */
+  --carotte:#C9622C;
+  --carotte-soft:#F7E7DA;
+  --tomate:#B4342C;
+  --tomate-soft:#F8E3E0;
+  --betterave:#8E2F4D;
+  --betterave-soft:#F5E2E8;
+  --aubergine:#4A2B45;
+  --aubergine-soft:#EDE3EC;
+  --courgette:#7E9B4E;
+  --courgette-soft:#EDF2E1;
+  --ble:#D8A93B;
+  --ble-soft:#FAF0D9;
+  --chou:#3A5A6B;
+  --chou-soft:#E2EBEF;
+
+  /* --- Encres --- */
+  --gris-700:#4A5A46;
+  --gris-500:#7C8878;
+  --gris-300:#B4BBAE;
+
+  /* --- Semantic aliases --- */
+  --surface-page:var(--lin-100);
+  --surface-card:var(--lin-50);
+  --surface-sunk:var(--lin-200);
+  --surface-invert:var(--basilic-800);
+  --surface-accent:var(--basilic-100);
+
+  --text-display:var(--basilic-800);
+  --text-body:var(--basilic-900);
+  --text-muted:var(--gris-500);
+  --text-secondary:var(--gris-700);
+  --text-on-invert:var(--lin-100);
+  --text-link:var(--basilic-700);
+  --text-link-hover:var(--carotte);
+
+  --border-hairline:#E4DCCB;
+  --border-strong:#CFC2A6;
+  --border-invert:rgba(251,247,239,.18);
+
+  --action-primary:var(--basilic-700);
+  --action-primary-hover:var(--basilic-800);
+  --action-accent:var(--carotte);
+  --action-accent-hover:#B0511F;
+
+  --focus-ring:var(--carotte);
+
+  --state-dispo:var(--courgette);
+  --state-dispo-soft:var(--courgette-soft);
+  --state-bientot:var(--ble);
+  --state-bientot-soft:var(--ble-soft);
+  --state-fini:var(--gris-500);
+  --state-fini-soft:var(--lin-200);
+}

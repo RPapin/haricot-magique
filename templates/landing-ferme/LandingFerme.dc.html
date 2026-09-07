@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<!-- @template name="Page de ferme" description="Landing page maraîchère: hero, récit de culture, légumes en vente, horaires." -->
+<helmet><script src="./ds-base.js"></script><link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css"><style>body{margin:0;background:#FBF7EF}a{color:#2F4A32}a:hover{color:#C9622C}</style></helmet>
+<main style="font-family:'Work Sans',sans-serif;color:#1B2719;background:#FBF7EF;padding:0 0 96px">
+<header style="position:sticky;top:0;z-index:5;background:rgba(251,247,239,.86);backdrop-filter:blur(14px);border-bottom:1px solid #E4DCCB;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:14px clamp(20px,5vw,56px)">
+<span style="font-family:'Newsreader',Georgia,serif;font-size:1.4rem;letter-spacing:-.015em;color:#22301F">Le Haricot <em style="color:#7E9B4E">Magique</em></span>
+<nav style="display:flex;gap:24px;font-size:.9375rem;color:#4A5A46"><a href="#ferme" style="text-decoration:none;color:#4A5A46">La ferme</a><a href="#legumes" style="text-decoration:none;color:#4A5A46">Les légumes</a><a href="#visite" style="text-decoration:none;color:#4A5A46">Venir nous voir</a></nav>
+</header>
+<section style="max-width:1200px;margin:0 auto;padding:clamp(48px,7vw,104px) clamp(20px,5vw,56px) clamp(64px,10vw,128px);display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(24px,5vw,72px);align-items:center">
+<div style="display:flex;flex-direction:column;gap:24px">
+<span style="align-self:flex-start;background:#E4EDE1;color:#2F4A32;font-size:.6875rem;font-weight:600;text-transform:uppercase;letter-spacing:.18em;padding:5px 11px 4px;border-radius:999px">Maraîchage en permaculture</span>
+<h1 style="margin:0;font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:clamp(3rem,7vw,4.75rem);line-height:1.06;letter-spacing:-.025em;color:#22301F;text-wrap:balance">Des légumes cueillis le matin, vendus l'après-midi</h1>
+<p style="margin:0;max-width:46ch;font-size:1.125rem;line-height:1.62;color:#4A5A46;text-wrap:pretty">Un hectare cultivé sans labour ni traitement. La boutique de la ferme ouvre deux fois par semaine, avec la récolte du jour.</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap"><x-import component-from-global-scope="LeHaricotMagiqueDesignSystem_35ce97.Button" size="lg" iconTrailing="true" hint-size="220px,56px">Réserver un panier</x-import><x-import component-from-global-scope="LeHaricotMagiqueDesignSystem_35ce97.Button" size="lg" variant="outline" icon="map-pin" hint-size="200px,56px">Venir à la ferme</x-import></div>
+</div>
+<div style="aspect-ratio:4 / 5;border-radius:22px;background:#E4EDE1;border:1px solid #E4DCCB;display:flex;align-items:flex-end;padding:24px"><span style="font-family:'DM Mono',monospace;font-size:.6875rem;letter-spacing:.04em;color:#7C8878">photo de la ferme à fournir · 4:5</span></div>
+</section>
+<section id="ferme" style="background:#FFFDF8;border-top:1px solid #E4DCCB;border-bottom:1px solid #E4DCCB"><div style="max-width:1200px;margin:0 auto;padding:clamp(64px,10vw,128px) clamp(20px,5vw,56px);display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(24px,5vw,72px)">
+<div style="display:flex;flex-direction:column;gap:16px"><span style="font-size:.6875rem;text-transform:uppercase;letter-spacing:.18em;font-weight:600;color:#C9622C">La ferme</span><h2 style="margin:0;font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:clamp(2rem,3.6vw,2.75rem);line-height:1.24;letter-spacing:-.012em;color:#22301F">Un potager conduit comme un sol vivant</h2></div>
+<p style="margin:0;font-size:1.125rem;line-height:1.62;color:#4A5A46;max-width:64ch;text-wrap:pretty">Les planches sont permanentes et couvertes toute l'année: paille, compost, engrais verts. Le sol n'est jamais retourné, ce qui garde l'eau et la vie qu'il contient. Les cultures sont associées pour se protéger entre elles.</p>
+</div></section>
+<section id="legumes" style="max-width:1200px;margin:0 auto;padding:clamp(64px,10vw,128px) clamp(20px,5vw,56px) 0;display:flex;flex-direction:column;gap:32px">
+<div style="display:flex;flex-direction:column;gap:16px"><span style="font-size:.6875rem;text-transform:uppercase;letter-spacing:.18em;font-weight:600;color:#C9622C">Au potager</span><h2 style="margin:0;font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:clamp(2rem,3.6vw,2.75rem);line-height:1.24;letter-spacing:-.012em;color:#22301F">Ce qui est en vente cette semaine</h2></div>
+<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:24px">
+<x-import component-from-global-scope="LeHaricotMagiqueDesignSystem_35ce97.VegetableCard" name="Carotte de Colmar" latin="Daucus carota" price="2,80 €" unit="la botte" state="dispo" color="carotte" note="Semée en mai, arrachée le matin de la vente." hint-size="100%,380px"></x-import>
+<x-import component-from-global-scope="LeHaricotMagiqueDesignSystem_35ce97.VegetableCard" name="Tomate cornue des Andes" latin="Solanum lycopersicum" price="4,50 €" unit="le kg" state="dispo" color="tomate" note="Peu de graines, beaucoup de chair." hint-size="100%,380px"></x-import>
+<x-import component-from-global-scope="LeHaricotMagiqueDesignSystem_35ce97.VegetableCard" name="Blette arc-en-ciel" price="2,20 €" unit="la botte" state="bientot" color="courgette" note="Côtes colorées, feuilles tendres." hint-size="100%,380px"></x-import>
+</div></section>
+<section id="visite" style="max-width:1200px;margin:clamp(64px,10vw,128px) auto 0;padding:0 clamp(20px,5vw,56px)"><div style="background:#22301F;color:#FBF7EF;border-radius:22px;padding:clamp(32px,5vw,64px);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,5vw,64px)">
+<div style="display:flex;flex-direction:column;gap:16px"><span style="font-size:.6875rem;text-transform:uppercase;letter-spacing:.18em;font-weight:600;color:#A8BFA6">Venir nous voir</span><h2 style="margin:0;font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:clamp(2rem,3.6vw,2.75rem);line-height:1.24;color:#FBF7EF">La boutique de la ferme</h2><p style="margin:0;font-size:1.125rem;line-height:1.62;color:#E4EDE1;max-width:44ch;text-wrap:pretty">Libre-service: on remplit son panier et on paie à la caisse près de l'entrée.</p></div>
+<div style="display:flex;flex-direction:column;gap:12px">
+<div style="display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding-bottom:12px;border-bottom:1px solid rgba(251,247,239,.18)"><span style="font-family:'Newsreader',Georgia,serif;font-size:1.3125rem">Mercredi</span><span style="font-family:'DM Mono',monospace;font-size:.9375rem;color:#A8BFA6">17h – 19h</span></div>
+<div style="display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding-bottom:12px;border-bottom:1px solid rgba(251,247,239,.18)"><span style="font-family:'Newsreader',Georgia,serif;font-size:1.3125rem">Samedi</span><span style="font-family:'DM Mono',monospace;font-size:.9375rem;color:#A8BFA6">10h – 13h</span></div>
+<span style="font-family:'DM Mono',monospace;font-size:.8125rem;color:#A8BFA6">Chemin des Verchères, 69890 La Tour de Salvagny</span>
+</div></div></section>
+</main>
+</x-dc>
+</body>
+</html>

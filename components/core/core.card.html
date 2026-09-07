@@ -1,0 +1,30 @@
+<!-- @dsCard group="Components" viewport="700x420" name="Core — boutons, pastilles, cartes" subtitle="Button, IconButton, Badge, Tag, Card, SectionHeading, Wordmark" -->
+<!doctype html><html lang="fr"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>*{box-sizing:border-box}body{margin:0;padding:20px 24px;font-family:var(--font-body);background:var(--surface-page);color:var(--text-body)}a{color:var(--text-link)}a:hover{color:var(--text-link-hover)}.stack{display:flex;flex-direction:column;gap:16px}.row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}.lbl{font-family:var(--font-mono);font-size:11px;color:var(--text-muted)}</style>
+</head><body><div id="root"></div>
+<script type="text/babel">
+const NS=window.LeHaricotMagiqueDesignSystem_35ce97;
+
+const {Button,IconButton,Badge,Tag,Card,SectionHeading,Wordmark}=NS;
+function Demo(){
+  const [filtre,setFiltre]=React.useState('racines');
+  return (<div className="stack">
+    <div className="row"><Button variant="primary" iconTrailing>Réserver un panier</Button><Button variant="accent">Commander</Button><Button variant="outline" icon="map-pin">Venir à la ferme</Button><Button variant="ghost">En savoir plus</Button></div>
+    <div className="row"><Button size="sm">sm</Button><Button size="md">md</Button><Button size="lg">lg</Button><Button disabled>épuisé</Button><IconButton icon="basket" label="Panier" tone="soft"/><IconButton icon="arrow-right" label="Suivant" tone="solid"/><IconButton icon="phone" label="Appeler" size="sm"/></div>
+    <div className="row"><Badge tone="dispo" dot>En vente</Badge><Badge tone="bientot">Bientôt</Badge><Badge tone="fini">Terminé</Badge><Badge tone="bio">Sans traitement</Badge><Badge tone="info">Nouveau</Badge></div>
+    <div className="row">{['racines','fruits','feuilles','courges'].map(t=>(<Tag key={t} color={t==='racines'?'carotte':t==='fruits'?'tomate':t==='feuilles'?'courgette':'ble'} selected={filtre===t} onClick={()=>setFiltre(t)}>{t}</Tag>))}</div>
+    <div className="row" style={{alignItems:'stretch'}}>
+      <Card interactive style={{flex:1}}><SectionHeading eyebrow="Au potager" title="Ce qui pousse" level={3}/></Card>
+      <Card tone="sunk" style={{flex:1}}><span className="lbl">tone="sunk"</span></Card>
+      <Card tone="invert" style={{flex:1}}><Wordmark tone="invert" subtitle/></Card>
+    </div>
+  </div>);
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<Demo/>);
+</script></body></html>
