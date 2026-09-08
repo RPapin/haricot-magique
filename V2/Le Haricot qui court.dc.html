@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/le-haricot-magique-design-system-35ce9797-1de3-48f5-98e6-8d41fd0fde36/tokens/fonts.css">
+<link rel="stylesheet" href="_ds/le-haricot-magique-design-system-35ce9797-1de3-48f5-98e6-8d41fd0fde36/tokens/colors.css">
+<link rel="stylesheet" href="_ds/le-haricot-magique-design-system-35ce9797-1de3-48f5-98e6-8d41fd0fde36/tokens/typography.css">
+<link rel="stylesheet" href="_ds/le-haricot-magique-design-system-35ce9797-1de3-48f5-98e6-8d41fd0fde36/tokens/spacing.css">
+<link rel="stylesheet" href="_ds/le-haricot-magique-design-system-35ce9797-1de3-48f5-98e6-8d41fd0fde36/tokens/elevation.css">
+<link rel="stylesheet" href="_ds/le-haricot-magique-design-system-35ce9797-1de3-48f5-98e6-8d41fd0fde36/tokens/motion.css">
+<link rel="stylesheet" href="_ds/le-haricot-magique-design-system-35ce9797-1de3-48f5-98e6-8d41fd0fde36/styles.css">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+<script src="_ds/le-haricot-magique-design-system-35ce9797-1de3-48f5-98e6-8d41fd0fde36/_ds_bundle.js"></script>
+<style>
+:root{
+--lin-50:#FDFAEC;--lin-100:#F5F0DE;--lin-200:#EDE7D0;--lin-300:#E1D9BF;--lin-400:#CFC4A2;
+--basilic-900:#0E3A26;--basilic-800:#12482F;--basilic-700:#1B5E3B;--basilic-600:#2FA84A;--basilic-500:#4FA83D;--basilic-300:#A9D14B;--basilic-100:#E4F0C0;
+--carotte:#EE7B3B;--carotte-soft:#FBE3CF;--tomate:#C2183F;--tomate-soft:#F8DCE1;--ble:#F6C312;--ble-soft:#FCEFC0;--courgette:#4FA83D;--courgette-soft:#E4F0C0;--betterave:#C2183F;--betterave-soft:#F8DCE1;--chou:#2FA84A;--chou-soft:#E4F0C0;--aubergine:#8E2F4D;--aubergine-soft:#F5E2E8;
+--gris-700:#42553F;--gris-500:#7A8570;
+--border-hairline:#E1D9BF;--border-strong:#CFC4A2;
+--action-accent-hover:#D4652A;
+}
+body{margin:0;background:#F5F0DE}
+a{color:#1B5E3B}a:hover{color:#EE7B3B}
+</style>
+</helmet>
+<main style="font-family:'Work Sans',sans-serif;color:#0E3A26;background:#F5F0DE">
+
+<header style="position:sticky;top:0;z-index:5;background:rgba(245,240,222,.88);backdrop-filter:blur(14px);border-bottom:1px solid #E1D9BF;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:14px clamp(20px,5vw,56px)">
+<span style="font-family:'Newsreader',Georgia,serif;font-size:1.4rem;letter-spacing:-.015em;color:#12482F">Le Haricot <em style="color:#EE7B3B">qui court</em></span>
+<nav style="display:flex;gap:24px;font-size:.9375rem;color:#42553F;flex-wrap:wrap">
+<a href="#ventes" style="text-decoration:none;color:#42553F">Dates de vente</a>
+<a href="#plants" style="text-decoration:none;color:#42553F">Les plants</a>
+<a href="#prix" style="text-decoration:none;color:#42553F">Prix et formats</a>
+<a href="#venir" style="text-decoration:none;color:#42553F">Venir nous voir</a>
+</nav>
+</header>
+
+<section style="max-width:1200px;margin:0 auto;padding:clamp(40px,6vw,88px) clamp(20px,5vw,56px) clamp(48px,8vw,104px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:clamp(24px,5vw,64px);align-items:center">
+<div style="display:flex;flex-direction:column;gap:22px">
+<span style="align-self:flex-start;background:#E4F0C0;color:#12482F;font-size:.6875rem;font-weight:600;text-transform:uppercase;letter-spacing:.18em;padding:5px 11px 4px;border-radius:999px">Vente de plants · printemps 2026</span>
+<h1 style="margin:0;font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:clamp(2.6rem,6.4vw,4.5rem);line-height:1.06;letter-spacing:-.025em;color:#12482F;text-wrap:balance">Des légumes locaux et originaux</h1>
+<p style="margin:0;max-width:48ch;font-size:1.125rem;line-height:1.62;color:#42553F;text-wrap:pretty">On sème en février dans la serre, et au mois de mai on ouvre les portes pour que vous repartiez avec de quoi remplir votre potager. Plus de 120 variétés de plants de légumes, de fines herbes et de fleurs, toutes élevées ici, sans traitement.</p>
+<p style="margin:0;max-width:48ch;font-size:1.125rem;line-height:1.62;color:#42553F;text-wrap:pretty">Et comme on aime les choses un peu rares, vous trouverez sur les tables des variétés qu'on ne voit plus beaucoup: crosne du Japon, cardon, tomate Noire de Crimée, chou perpétuel Daubenton.</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap">
+<x-import component-from-global-scope="LeHaricotMagiqueDesignSystem_35ce97.Button" size="lg" iconTrailing="true" href="#plants" hint-size="220px,56px">Voir les plants</x-import>
+<x-import component-from-global-scope="LeHaricotMagiqueDesignSystem_35ce97.Button" size="lg" variant="outline" icon="map-pin" href="#venir" hint-size="200px,56px">Venir à la ferme</x-import>
+</div>
+</div>
+<div style="aspect-ratio:4 / 5;border-radius:22px;background:#2FA84A;border:1px solid #E1D9BF;display:flex;align-items:flex-end;padding:24px;min-height:280px"><span style="font-family:'DM Mono',monospace;font-size:.6875rem;letter-spacing:.04em;color:#F5F0DE">photo des tables de plants à fournir · 4:5</span></div>
+</section>
+
+<section id="ventes" style="background:#12482F;color:#F5F0DE">
+<div style="max-width:1200px;margin:0 auto;padding:clamp(48px,8vw,104px) clamp(20px,5vw,56px);display:flex;flex-direction:column;gap:36px">
+<div style="display:flex;flex-direction:column;gap:14px">
+<span style="font-size:.6875rem;text-transform:uppercase;letter-spacing:.18em;font-weight:600;color:#A9D14B">Dates et lieux</span>
+<h2 style="margin:0;font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:clamp(2rem,3.6vw,2.75rem);line-height:1.24;letter-spacing:-.012em;color:#F5F0DE">Trois week-ends, deux endroits</h2>
+<p style="margin:0;max-width:56ch;font-size:1.0625rem;line-height:1.62;color:#E4F0C0;text-wrap:pretty">On vend à la ferme le matin, quand les plants sortent tout juste de la serre. Venez tôt si vous cherchez les variétés rares: elles partent vite.</p>
+</div>
+<sc-if value="{{ ventesOuvertes }}" hint-placeholder-val="{{ true }}">
+<div style="display:flex;align-items:center;gap:12px;background:#F6C312;color:#12482F;border-radius:14px;padding:14px 18px;font-family:'DM Mono',monospace;font-size:.875rem;letter-spacing:.02em"><i class="ph ph-plant" aria-hidden="true" style="font-size:1.3em"></i>Les tables sont ouvertes ce samedi. Aucune réservation nécessaire.</div>
+</sc-if>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:24px">
+<div style="border:1px solid rgba(245,240,222,.22);border-radius:14px;padding:28px;display:flex;flex-direction:column;gap:18px">
+<div style="display:flex;flex-direction:column;gap:6px"><span style="font-family:'Newsreader',Georgia,serif;font-size:1.75rem;color:#F5F0DE">À la ferme</span><span style="font-family:'DM Mono',monospace;font-size:.8125rem;color:#A9D14B">Chemin des Verchères, 69890 La Tour de Salvagny</span></div>
+<div style="display:flex;flex-direction:column;gap:10px">
+<div style="display:flex;justify-content:space-between;gap:16px;padding-bottom:10px;border-bottom:1px solid rgba(245,240,222,.18)"><span style="font-size:1rem">Samedi 2 mai</span><span style="font-family:'DM Mono',monospace;font-size:.9375rem;color:#A9D14B">9h – 17h</span></div>
+<div style="display:flex;justify-content:space-between;gap:16px;padding-bottom:10px;border-bottom:1px solid rgba(245,240,222,.18)"><span style="font-size:1rem">Dimanche 3 mai</span><span style="font-family:'DM Mono',monospace;font-size:.9375rem;color:#A9D14B">9h – 13h</span></div>
+<div style="display:flex;justify-content:space-between;gap:16px"><span style="font-size:1rem">Samedi 9 mai</span><span style="font-family:'DM Mono',monospace;font-size:.9375rem;color:#A9D14B">9h – 17h</span></div>
+</div>
+</div>
+<div style="border:1px solid rgba(245,240,222,.22);border-radius:14px;padding:28px;display:flex;flex-direction:column;gap:18px">
+<div style="display:flex;flex-direction:column;gap:6px"><span style="font-family:'Newsreader',Georgia,serif;font-size:1.75rem;color:#F5F0DE">Au marché de Lyon 5<sup>e</sup></span><span style="font-family:'DM Mono',monospace;font-size:.8125rem;color:#A9D14B">Place Saint-Jean, sous les platanes</span></div>
+<div style="display:flex;flex-direction:column;gap:10px">
+<div style="display:flex;justify-content:space-between;gap:16px;padding-bottom:10px;border-bottom:1px solid rgba(245,240,222,.18)"><span style="font-size:1rem">Dimanche 10 mai</span><span style="font-family:'DM Mono',monospace;font-size:.9375rem;color:#A9D14B">8h – 13h</span></div>
+<div style="display:flex;justify-content:space-between;gap:16px"><span style="font-size:1rem">Dimanche 17 mai</span><span style="font-family:'DM Mono',monospace;font-size:.9375rem;color:#A9D14B">8h – 13h</span></div>
+</div>
+<p style="margin:0;font-size:.9375rem;line-height:1.6;color:#E4F0C0">On n'emporte au marché qu'une partie des variétés. Pour le choix complet, c'est à la ferme.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="plants" style="max-width:1200px;margin:0 auto;padding:clamp(56px,9vw,120px) clamp(20px,5vw,56px) 0;display:flex;flex-direction:column;gap:32px">
+<div style="display:flex;flex-direction:column;gap:14px">
+<span style="font-size:.6875rem;text-transform:uppercase;letter-spacing:.18em;font-weight:600;color:#EE7B3B">Espèces disponibles</span>
+<h2 style="margin:0;font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:clamp(2rem,3.6vw,2.75rem);line-height:1.24;letter-spacing:-.012em;color:#12482F">Légumes, fines herbes et fleurs</h2>
+<p style="margin:0;max-width:60ch;font-size:1.0625rem;line-height:1.62;color:#42553F;text-wrap:pretty">Tous nos plants sont semés et élevés à la ferme, en terreau bio, sans chauffage forcé. Ils sont donc un peu plus trapus que ceux de la jardinerie, et ils reprennent mieux. On vous donne les espacements et les conseils de culture au moment de la vente.</p>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,250px),1fr));gap:24px">
+<x-import component-from-global-scope="LeHaricotMagiqueDesignSystem_35ce97.VegetableCard" name="Tomate Noire de Crimée" latin="Solanum lycopersicum" price="2,90 €" unit="le pot de 10,5 cm" state="dispo" color="tomate" note="Chair sombre et sucrée, à tuteurer solidement." hint-size="100%,380px"></x-import>
+<x-import component-from-global-scope="LeHaricotMagiqueDesignSystem_35ce97.VegetableCard" name="Crosne du Japon" latin="Stachys affinis" price="3,50 €" unit="le godet" state="dispo" color="chou" note="Se récolte en novembre, se cuisine comme un salsifis." hint-size="100%,380px"></x-import>
+<x-import component-from-global-scope="LeHaricotMagiqueDesignSystem_35ce97.VegetableCard" name="Cardon de Vaulx-en-Velin" latin="Cynara cardunculus" price="2,90 €" unit="le pot de 10,5 cm" state="dispo" color="courgette" note="Une variété lyonnaise, à blanchir avant les gelées." hint-size="100%,380px"></x-import>
+<x-import component-from-global-scope="LeHaricotMagiqueDesignSystem_35ce97.VegetableCard" name="Chou Daubenton" latin="Brassica oleracea ramosa" price="3,50 €" unit="le godet" state="dispo" color="chou" note="Vivace: il repart chaque année, on cueille les pousses." hint-size="100%,380px"></x-import>
+<x-import component-from-global-scope="LeHaricotMagiqueDesignSystem_35ce97.VegetableCard" name="Piment doux des Landes" latin="Capsicum annuum" price="2,90 €" unit="le pot de 10,5 cm" state="bientot" color="carotte" note="Prêt vers le 10 mai, une fois les nuits plus douces." hint-size="100%,380px"></x-import>
+<x-import component-from-global-scope="LeHaricotMagiqueDesignSystem_35ce97.VegetableCard" name="Basilic pourpre" latin="Ocimum basilicum" price="1,80 €" unit="le godet" state="dispo" color="betterave" note="Plus poivré que le vert, superbe dans une salade de tomates." hint-size="100%,380px"></x-import>
+<sc-if value="{{ catalogueComplet }}" hint-placeholder-val="{{ true }}">
+<x-import component-from-global-scope="LeHaricotMagiqueDesignSystem_35ce97.VegetableCard" name="Physalis du Pérou" latin="Physalis peruviana" price="3,50 €" unit="le godet" state="dispo" color="ble" note="Des petites lanternes sucrées jusqu'aux premières gelées." hint-size="100%,380px"></x-import>
+<x-import component-from-global-scope="LeHaricotMagiqueDesignSystem_35ce97.VegetableCard" name="Courge patidou" latin="Cucurbita pepo" price="2,90 €" unit="le pot de 10,5 cm" state="bientot" color="ble" note="Un goût de châtaigne, une taille de portion individuelle." hint-size="100%,380px"></x-import>
+<x-import component-from-global-scope="LeHaricotMagiqueDesignSystem_35ce97.VegetableCard" name="Capucine grimpante" latin="Tropaeolum majus" price="1,80 €" unit="le godet" state="dispo" color="carotte" note="On la plante au pied des courgettes: elle attire les pucerons." hint-size="100%,380px"></x-import>
+<x-import component-from-global-scope="LeHaricotMagiqueDesignSystem_35ce97.VegetableCard" name="Bette à carde rouge" latin="Beta vulgaris" price="1,80 €" unit="le godet" state="dispo" color="betterave" note="Elle tient tout l'hiver si on la couvre un peu." hint-size="100%,380px"></x-import>
+</sc-if>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding-top:4px">
+<span style="font-family:'DM Mono',monospace;font-size:.8125rem;color:#7A8570;margin-right:6px">Aussi sur les tables :</span>
+<x-import component-from-global-scope="LeHaricotMagiqueDesignSystem_35ce97.Tag" color="tomate" hint-size="90px,30px">Aubergines</x-import>
+<x-import component-from-global-scope="LeHaricotMagiqueDesignSystem_35ce97.Tag" color="courgette" hint-size="90px,30px">Salades</x-import>
+<x-import component-from-global-scope="LeHaricotMagiqueDesignSystem_35ce97.Tag" color="carotte" hint-size="90px,30px">Fines herbes</x-import>
+<x-import component-from-global-scope="LeHaricotMagiqueDesignSystem_35ce97.Tag" color="ble" hint-size="90px,30px">Fleurs annuelles</x-import>
+<x-import component-from-global-scope="LeHaricotMagiqueDesignSystem_35ce97.Tag" color="chou" hint-size="90px,30px">Choux</x-import>
+<x-import component-from-global-scope="LeHaricotMagiqueDesignSystem_35ce97.Tag" color="betterave" hint-size="90px,30px">Petits fruits</x-import>
+</div>
+</section>
+
+<section id="prix" style="max-width:1200px;margin:0 auto;padding:clamp(56px,9vw,120px) clamp(20px,5vw,56px) 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:clamp(24px,5vw,64px);align-items:start">
+<div style="display:flex;flex-direction:column;gap:14px">
+<span style="font-size:.6875rem;text-transform:uppercase;letter-spacing:.18em;font-weight:600;color:#EE7B3B">Prix et formats</span>
+<h2 style="margin:0;font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:clamp(2rem,3.6vw,2.75rem);line-height:1.24;letter-spacing:-.012em;color:#12482F">Le prix dépend du contenant</h2>
+<p style="margin:0;max-width:52ch;font-size:1.0625rem;line-height:1.62;color:#42553F;text-wrap:pretty">Pas de tarif par variété: on regarde la taille du pot, c'est tout. Ramenez vos cagettes et vos vieux godets, on les réutilise d'une année sur l'autre.</p>
+</div>
+<div style="background:#FDFAEC;border:1px solid #E1D9BF;border-radius:14px;padding:clamp(20px,3vw,32px);display:flex;flex-direction:column;gap:2px">
+<div style="display:flex;justify-content:space-between;gap:16px;align-items:baseline;padding:14px 0;border-bottom:1px solid #E1D9BF"><span style="font-size:1rem;color:#0E3A26">Godet de 8 cm</span><span style="font-family:'DM Mono',monospace;font-size:1rem;color:#12482F">1,80 €</span></div>
+<div style="display:flex;justify-content:space-between;gap:16px;align-items:baseline;padding:14px 0;border-bottom:1px solid #E1D9BF"><span style="font-size:1rem;color:#0E3A26">Pot de 10,5 cm</span><span style="font-family:'DM Mono',monospace;font-size:1rem;color:#12482F">2,90 €</span></div>
+<div style="display:flex;justify-content:space-between;gap:16px;align-items:baseline;padding:14px 0;border-bottom:1px solid #E1D9BF"><span style="font-size:1rem;color:#0E3A26">Plaque de 6 alvéoles</span><span style="font-family:'DM Mono',monospace;font-size:1rem;color:#12482F">4,50 €</span></div>
+<div style="display:flex;justify-content:space-between;gap:16px;align-items:baseline;padding:14px 0;border-bottom:1px solid #E1D9BF"><span style="font-size:1rem;color:#0E3A26">Pot de 1 litre</span><span style="font-family:'DM Mono',monospace;font-size:1rem;color:#12482F">6,50 €</span></div>
+<div style="display:flex;justify-content:space-between;gap:16px;align-items:baseline;padding:14px 0"><span style="font-size:1rem;color:#0E3A26">Pot de 3 litres (vivaces)</span><span style="font-family:'DM Mono',monospace;font-size:1rem;color:#12482F">12,00 €</span></div>
+<div style="display:flex;align-items:center;gap:10px;margin-top:14px;background:#E4F0C0;border-radius:8px;padding:12px 14px"><i class="ph ph-basket" aria-hidden="true" style="font-size:1.2em;color:#12482F"></i><span style="font-size:.9375rem;color:#12482F">Dix godets achetés, le onzième est offert.</span></div>
+</div>
+</section>
+
+<section style="max-width:1200px;margin:0 auto;padding:clamp(56px,9vw,120px) clamp(20px,5vw,56px) 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:24px">
+<div style="grid-column:1 / -1;display:flex;flex-direction:column;gap:14px">
+<span style="font-size:.6875rem;text-transform:uppercase;letter-spacing:.18em;font-weight:600;color:#EE7B3B">Sur place</span>
+<h2 style="margin:0;font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:clamp(2rem,3.6vw,2.75rem);line-height:1.24;letter-spacing:-.012em;color:#12482F">Comment ça se passe le jour J</h2>
+</div>
+<div style="background:#FDFAEC;border:1px solid #E1D9BF;border-radius:14px;padding:28px;display:flex;flex-direction:column;gap:12px">
+<i class="ph ph-basket" aria-hidden="true" style="font-size:1.6rem;color:#EE7B3B"></i>
+<span style="font-family:'Newsreader',Georgia,serif;font-size:1.375rem;color:#12482F">Libre-service</span>
+<p style="margin:0;font-size:1rem;line-height:1.6;color:#42553F">Vous prenez une caisse à l'entrée de la serre, vous vous promenez entre les tables, et on passe vous voir si une variété vous fait hésiter.</p>
+</div>
+<div style="background:#FDFAEC;border:1px solid #E1D9BF;border-radius:14px;padding:28px;display:flex;flex-direction:column;gap:12px">
+<i class="ph ph-check" aria-hidden="true" style="font-size:1.6rem;color:#EE7B3B"></i>
+<span style="font-family:'Newsreader',Georgia,serif;font-size:1.375rem;color:#12482F">Modes de paiement</span>
+<p style="margin:0;font-size:1rem;line-height:1.6;color:#42553F">Espèces, carte bancaire et chèque à la table de caisse, près de la porte. Pas de minimum d'achat.</p>
+</div>
+<div style="background:#FDFAEC;border:1px solid #E1D9BF;border-radius:14px;padding:28px;display:flex;flex-direction:column;gap:12px">
+<i class="ph ph-plant" aria-hidden="true" style="font-size:1.6rem;color:#EE7B3B"></i>
+<span style="font-family:'Newsreader',Georgia,serif;font-size:1.375rem;color:#12482F">Les conseils</span>
+<p style="margin:0;font-size:1rem;line-height:1.6;color:#42553F">Chaque plant porte une étiquette avec la date de semis, l'espacement et l'exposition. Le reste, on en parle sur place.</p>
+</div>
+</section>
+
+<section id="venir" style="max-width:1200px;margin:clamp(56px,9vw,120px) auto 0;padding:0 clamp(20px,5vw,56px)">
+<div style="background:#12482F;color:#F5F0DE;border-radius:22px;padding:clamp(28px,5vw,64px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:clamp(24px,5vw,64px)">
+<div style="display:flex;flex-direction:column;gap:16px">
+<span style="font-size:.6875rem;text-transform:uppercase;letter-spacing:.18em;font-weight:600;color:#A9D14B">Venir nous voir</span>
+<h2 style="margin:0;font-family:'Newsreader',Georgia,serif;font-weight:400;font-size:clamp(2rem,3.6vw,2.75rem);line-height:1.24;color:#F5F0DE">La ferme, au bout du chemin</h2>
+<p style="margin:0;font-size:1.0625rem;line-height:1.62;color:#E4F0C0;max-width:44ch;text-wrap:pretty">On est à vingt minutes de Lyon par la D307. Le portail vert est ouvert les jours de vente, garez-vous dans le pré à droite.</p>
+<div style="aspect-ratio:16 / 7;border-radius:14px;background:#2FA84A;display:flex;align-items:flex-end;padding:16px;margin-top:8px"><span style="font-family:'DM Mono',monospace;font-size:.6875rem;color:#F5F0DE">plan d'accès à fournir · 16:7</span></div>
+</div>
+<div style="display:flex;flex-direction:column;gap:14px">
+<div style="display:flex;gap:12px;align-items:flex-start;padding-bottom:14px;border-bottom:1px solid rgba(245,240,222,.18)"><i class="ph ph-map-pin" aria-hidden="true" style="font-size:1.2em;color:#A9D14B;margin-top:3px"></i><span style="font-size:1rem;line-height:1.55">Chemin des Verchères<br>69890 La Tour de Salvagny</span></div>
+<div style="display:flex;gap:12px;align-items:center;padding-bottom:14px;border-bottom:1px solid rgba(245,240,222,.18)"><i class="ph ph-phone" aria-hidden="true" style="font-size:1.2em;color:#A9D14B"></i><span style="font-family:'DM Mono',monospace;font-size:.9375rem">04 __ __ __ __ · à compléter</span></div>
+<div style="display:flex;gap:12px;align-items:center;padding-bottom:14px;border-bottom:1px solid rgba(245,240,222,.18)"><i class="ph ph-envelope" aria-hidden="true" style="font-size:1.2em;color:#A9D14B"></i><span style="font-family:'DM Mono',monospace;font-size:.9375rem">bonjour@leharicotquicourt.fr</span></div>
+<div style="display:flex;gap:12px;align-items:flex-start"><i class="ph ph-clock" aria-hidden="true" style="font-size:1.2em;color:#A9D14B;margin-top:3px"></i><span style="font-size:1rem;line-height:1.55">Hors vente de plants, la boutique ouvre le mercredi 17h – 19h et le samedi 10h – 13h.</span></div>
+<div style="margin-top:10px"><x-import component-from-global-scope="LeHaricotMagiqueDesignSystem_35ce97.Button" variant="accent" size="lg" icon="envelope" href="mailto:bonjour@leharicotquicourt.fr" hint-size="220px,56px">Nous écrire</x-import></div>
+</div>
+</div>
+</section>
+
+<footer style="max-width:1200px;margin:0 auto;padding:clamp(40px,6vw,80px) clamp(20px,5vw,56px) 64px;display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:baseline">
+<span style="font-family:'Newsreader',Georgia,serif;font-size:1.25rem;color:#12482F">Le Haricot <em style="color:#EE7B3B">qui court</em></span>
+<span style="font-family:'DM Mono',monospace;font-size:.75rem;color:#7A8570">Dates, prix et coordonnées sont des exemples à valider.</span>
+</footer>
+
+</main>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;ventesOuvertes&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Vente&quot;},&quot;catalogueComplet&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Vente&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      ventesOuvertes: this.props.ventesOuvertes ?? true,
+      catalogueComplet: this.props.catalogueComplet ?? true
+    };
+  }
+}
+</script>
+</body>
+</html>

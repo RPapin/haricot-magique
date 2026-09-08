@@ -1,0 +1,10 @@
+/* Webfonts. No brand font files were provided with the sources, so the two
+   families below are Google Fonts chosen for the brand (see readme.md > Caveats).
+   Replace these @import lines with local @font-face rules if licensed files arrive. */
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..600&family=Work+Sans:ital,wght@0,300..700;1,300..600&family=DM+Mono:wght@400;500&display=swap");
+
+:root{
+  --font-display:"Newsreader",Georgia,"Times New Roman",serif;
+  --font-body:"Work Sans","Helvetica Neue",Arial,sans-serif;
+  --font-mono:"DM Mono",ui-monospace,"SF Mono",monospace;
+}
